@@ -37,6 +37,11 @@ public class LedController {
         return "Hello Kimball!";
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/n")
+    public Greeting greetingName(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    }
+
     @RequestMapping("/light")
     public String light() {
         if (pin == null) {
