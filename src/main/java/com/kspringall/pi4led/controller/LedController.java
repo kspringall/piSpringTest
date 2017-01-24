@@ -19,7 +19,7 @@ public class LedController {
     @RequestMapping("/")
     public String greeting() {
 
-        return "ROOT Call";
+        return "Hello World";
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/g")
