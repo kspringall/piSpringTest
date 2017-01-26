@@ -17,4 +17,6 @@ public class Greeting {
     public String getContent() {
         return content;
     }
+
+    public String getMessage() { return "This is a test message"; }
 }
