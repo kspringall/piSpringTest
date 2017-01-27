@@ -1,7 +1,7 @@
 #!/bin/sh
-SERVICE_NAME=MyService
+SERVICE_NAME=srvwrapper
 PATH_TO_JAR=~/Documents/dev/piSpringTest/target/pi4led-1.0-SNAPSHOT.jar
-PID_PATH_NAME=/tmp/MyService-pid
+PID_PATH_NAME=/tmp/srvwrapper-pid
 case $1 in
     start)
         echo "Starting $SERVICE_NAME ..."
